@@ -22,6 +22,8 @@
 		DAA2C8A81E74B4DD00A77992 /* DDBrick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAA2C8A51E74B4D600A77992 /* DDBrick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DAA2C8AB1E74B74C00A77992 /* DDUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA2C8AA1E74B74C00A77992 /* DDUIKit.framework */; };
 		DAA2C8AC1E74B74C00A77992 /* DDUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAA2C8AA1E74B74C00A77992 /* DDUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAA2C8B31E74BB2100A77992 /* TextData.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA2C8B21E74BB2100A77992 /* TextData.m */; };
+		DAA2C8BA1E74BF1700A77992 /* CourseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA2C8B91E74BF1700A77992 /* CourseModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,10 @@
 		DAA2C8991E74AF5400A77992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAA2C8A51E74B4D600A77992 /* DDBrick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DDBrick.framework; sourceTree = "<group>"; };
 		DAA2C8AA1E74B74C00A77992 /* DDUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DDUIKit.framework; sourceTree = "<group>"; };
+		DAA2C8B11E74BB2100A77992 /* TextData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextData.h; sourceTree = "<group>"; };
+		DAA2C8B21E74BB2100A77992 /* TextData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextData.m; sourceTree = "<group>"; };
+		DAA2C8B81E74BF1700A77992 /* CourseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseModel.h; sourceTree = "<group>"; };
+		DAA2C8B91E74BF1700A77992 /* CourseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseModel.m; sourceTree = "<group>"; };
 		EC03E11823FC7F8FDFD8A883 /* Pods-DDBrickDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDBrickDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DDBrickDemo/Pods-DDBrickDemo.release.xcconfig"; sourceTree = "<group>"; };
 		EC247C83CF61785BD4148DAF /* Pods_DDBrickDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDBrickDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC9C30D8B49B9241FC4D7B12 /* Pods-DDBrickDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDBrickDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DDBrickDemoUITests/Pods-DDBrickDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -166,6 +172,8 @@
 		DAA2C8711E74AF5300A77992 /* DDBrickDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DAA2C8B71E74BECE00A77992 /* Model */,
+				DAA2C8B01E74BB2100A77992 /* BusinessData */,
 				DAA2C8751E74AF5300A77992 /* AppDelegate.h */,
 				DAA2C8761E74AF5300A77992 /* AppDelegate.m */,
 				DAA2C8781E74AF5300A77992 /* ViewController.h */,
@@ -203,6 +211,24 @@
 				DAA2C8991E74AF5400A77992 /* Info.plist */,
 			);
 			path = DDBrickDemoUITests;
+			sourceTree = "<group>";
+		};
+		DAA2C8B01E74BB2100A77992 /* BusinessData */ = {
+			isa = PBXGroup;
+			children = (
+				DAA2C8B11E74BB2100A77992 /* TextData.h */,
+				DAA2C8B21E74BB2100A77992 /* TextData.m */,
+			);
+			path = BusinessData;
+			sourceTree = "<group>";
+		};
+		DAA2C8B71E74BECE00A77992 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DAA2C8B81E74BF1700A77992 /* CourseModel.h */,
+				DAA2C8B91E74BF1700A77992 /* CourseModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -489,7 +515,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAA2C8B31E74BB2100A77992 /* TextData.m in Sources */,
 				DAA2C87A1E74AF5300A77992 /* ViewController.m in Sources */,
+				DAA2C8BA1E74BF1700A77992 /* CourseModel.m in Sources */,
 				DAA2C8771E74AF5300A77992 /* AppDelegate.m in Sources */,
 				DAA2C8741E74AF5300A77992 /* main.m in Sources */,
 			);
