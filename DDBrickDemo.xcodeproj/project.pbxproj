@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1413116BCD8AE1C71715B637 /* Pods_DDBrickDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC247C83CF61785BD4148DAF /* Pods_DDBrickDemo.framework */; };
+		30F102DF74A7A1A43D5ECAF6 /* Pods_DDBrickDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231D042837BEA83F54B6EB0A /* Pods_DDBrickDemoTests.framework */; };
+		7FF1E99DB99901358551B35C /* Pods_DDBrickDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A30E9A6FCD516A7CEFD2CAA6 /* Pods_DDBrickDemoUITests.framework */; };
 		DAA2C8741E74AF5300A77992 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA2C8731E74AF5300A77992 /* main.m */; };
 		DAA2C8771E74AF5300A77992 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA2C8761E74AF5300A77992 /* AppDelegate.m */; };
 		DAA2C87A1E74AF5300A77992 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA2C8791E74AF5300A77992 /* ViewController.m */; };
@@ -15,6 +18,10 @@
 		DAA2C8821E74AF5300A77992 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA2C8801E74AF5300A77992 /* LaunchScreen.storyboard */; };
 		DAA2C88D1E74AF5400A77992 /* DDBrickDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA2C88C1E74AF5400A77992 /* DDBrickDemoTests.m */; };
 		DAA2C8981E74AF5400A77992 /* DDBrickDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA2C8971E74AF5400A77992 /* DDBrickDemoUITests.m */; };
+		DAA2C8A61E74B4D600A77992 /* DDBrick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA2C8A51E74B4D600A77992 /* DDBrick.framework */; };
+		DAA2C8A81E74B4DD00A77992 /* DDBrick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAA2C8A51E74B4D600A77992 /* DDBrick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAA2C8AB1E74B74C00A77992 /* DDUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA2C8AA1E74B74C00A77992 /* DDUIKit.framework */; };
+		DAA2C8AC1E74B74C00A77992 /* DDUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAA2C8AA1E74B74C00A77992 /* DDUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +41,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DAA2C8A91E74B4DD00A77992 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DAA2C8A81E74B4DD00A77992 /* DDBrick.framework in Embed Frameworks */,
+				DAA2C8AC1E74B74C00A77992 /* DDUIKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		17D8A0BFC3E4A129ECCE8E50 /* Pods-DDBrickDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDBrickDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DDBrickDemo/Pods-DDBrickDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		231D042837BEA83F54B6EB0A /* Pods_DDBrickDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDBrickDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D9068989F0C97302C30C045 /* Pods-DDBrickDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDBrickDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DDBrickDemoTests/Pods-DDBrickDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		536A9E0697325BA4890F9559 /* Pods-DDBrickDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDBrickDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DDBrickDemoTests/Pods-DDBrickDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		A30E9A6FCD516A7CEFD2CAA6 /* Pods_DDBrickDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDBrickDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0E8264769B594929DC531FD /* Pods-DDBrickDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDBrickDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DDBrickDemoUITests/Pods-DDBrickDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DAA2C86F1E74AF5300A77992 /* DDBrickDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDBrickDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA2C8731E74AF5300A77992 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DAA2C8751E74AF5300A77992 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +79,11 @@
 		DAA2C8931E74AF5400A77992 /* DDBrickDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DDBrickDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA2C8971E74AF5400A77992 /* DDBrickDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDBrickDemoUITests.m; sourceTree = "<group>"; };
 		DAA2C8991E74AF5400A77992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAA2C8A51E74B4D600A77992 /* DDBrick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DDBrick.framework; sourceTree = "<group>"; };
+		DAA2C8AA1E74B74C00A77992 /* DDUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DDUIKit.framework; sourceTree = "<group>"; };
+		EC03E11823FC7F8FDFD8A883 /* Pods-DDBrickDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDBrickDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DDBrickDemo/Pods-DDBrickDemo.release.xcconfig"; sourceTree = "<group>"; };
+		EC247C83CF61785BD4148DAF /* Pods_DDBrickDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDBrickDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC9C30D8B49B9241FC4D7B12 /* Pods-DDBrickDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDBrickDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DDBrickDemoUITests/Pods-DDBrickDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +91,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAA2C8A61E74B4D600A77992 /* DDBrick.framework in Frameworks */,
+				DAA2C8AB1E74B74C00A77992 /* DDUIKit.framework in Frameworks */,
+				1413116BCD8AE1C71715B637 /* Pods_DDBrickDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30F102DF74A7A1A43D5ECAF6 /* Pods_DDBrickDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,19 +109,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FF1E99DB99901358551B35C /* Pods_DDBrickDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1ED04FF03F9C2FF7461F1195 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC247C83CF61785BD4148DAF /* Pods_DDBrickDemo.framework */,
+				231D042837BEA83F54B6EB0A /* Pods_DDBrickDemoTests.framework */,
+				A30E9A6FCD516A7CEFD2CAA6 /* Pods_DDBrickDemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B14F433B88D86E584FD07220 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17D8A0BFC3E4A129ECCE8E50 /* Pods-DDBrickDemo.debug.xcconfig */,
+				EC03E11823FC7F8FDFD8A883 /* Pods-DDBrickDemo.release.xcconfig */,
+				3D9068989F0C97302C30C045 /* Pods-DDBrickDemoTests.debug.xcconfig */,
+				536A9E0697325BA4890F9559 /* Pods-DDBrickDemoTests.release.xcconfig */,
+				B0E8264769B594929DC531FD /* Pods-DDBrickDemoUITests.debug.xcconfig */,
+				FC9C30D8B49B9241FC4D7B12 /* Pods-DDBrickDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DAA2C8661E74AF5300A77992 = {
 			isa = PBXGroup;
 			children = (
+				DAA2C8AA1E74B74C00A77992 /* DDUIKit.framework */,
+				DAA2C8A51E74B4D600A77992 /* DDBrick.framework */,
 				DAA2C8711E74AF5300A77992 /* DDBrickDemo */,
 				DAA2C88B1E74AF5400A77992 /* DDBrickDemoTests */,
 				DAA2C8961E74AF5400A77992 /* DDBrickDemoUITests */,
 				DAA2C8701E74AF5300A77992 /* Products */,
+				B14F433B88D86E584FD07220 /* Pods */,
+				1ED04FF03F9C2FF7461F1195 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,9 +212,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAA2C89C1E74AF5400A77992 /* Build configuration list for PBXNativeTarget "DDBrickDemo" */;
 			buildPhases = (
+				FB2F921F4C76D01504D75121 /* [CP] Check Pods Manifest.lock */,
 				DAA2C86B1E74AF5300A77992 /* Sources */,
 				DAA2C86C1E74AF5300A77992 /* Frameworks */,
 				DAA2C86D1E74AF5300A77992 /* Resources */,
+				DAA2C8A91E74B4DD00A77992 /* Embed Frameworks */,
+				C09C7A699A88B231F7771CA1 /* [CP] Embed Pods Frameworks */,
+				9D6F95B89219951EC7AFF48B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,9 +233,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAA2C89F1E74AF5400A77992 /* Build configuration list for PBXNativeTarget "DDBrickDemoTests" */;
 			buildPhases = (
+				F68374F5134ACFB13E901D4B /* [CP] Check Pods Manifest.lock */,
 				DAA2C8841E74AF5400A77992 /* Sources */,
 				DAA2C8851E74AF5400A77992 /* Frameworks */,
 				DAA2C8861E74AF5400A77992 /* Resources */,
+				16F693693344A41A341D6D01 /* [CP] Embed Pods Frameworks */,
+				4B5BDE7044587742CFFDE52C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,9 +254,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAA2C8A21E74AF5400A77992 /* Build configuration list for PBXNativeTarget "DDBrickDemoUITests" */;
 			buildPhases = (
+				F188A40305D515C8C0BED9F6 /* [CP] Check Pods Manifest.lock */,
 				DAA2C88F1E74AF5400A77992 /* Sources */,
 				DAA2C8901E74AF5400A77992 /* Frameworks */,
 				DAA2C8911E74AF5400A77992 /* Resources */,
+				E0C6F81841C82A8B8C3203A4 /* [CP] Embed Pods Frameworks */,
+				760162A3B352478C04DDB003 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,6 +345,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16F693693344A41A341D6D01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DDBrickDemoTests/Pods-DDBrickDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B5BDE7044587742CFFDE52C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DDBrickDemoTests/Pods-DDBrickDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		760162A3B352478C04DDB003 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DDBrickDemoUITests/Pods-DDBrickDemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D6F95B89219951EC7AFF48B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DDBrickDemo/Pods-DDBrickDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C09C7A699A88B231F7771CA1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DDBrickDemo/Pods-DDBrickDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0C6F81841C82A8B8C3203A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DDBrickDemoUITests/Pods-DDBrickDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F188A40305D515C8C0BED9F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F68374F5134ACFB13E901D4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FB2F921F4C76D01504D75121 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DAA2C86B1E74AF5300A77992 /* Sources */ = {
@@ -425,9 +638,14 @@
 		};
 		DAA2C89D1E74AF5400A77992 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17D8A0BFC3E4A129ECCE8E50 /* Pods-DDBrickDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5ELCMRHSMM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = DDBrickDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.marboo.DDBrickDemo;
@@ -437,9 +655,14 @@
 		};
 		DAA2C89E1E74AF5400A77992 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC03E11823FC7F8FDFD8A883 /* Pods-DDBrickDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5ELCMRHSMM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = DDBrickDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.marboo.DDBrickDemo;
@@ -449,6 +672,7 @@
 		};
 		DAA2C8A01E74AF5400A77992 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D9068989F0C97302C30C045 /* Pods-DDBrickDemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 5ELCMRHSMM;
@@ -462,6 +686,7 @@
 		};
 		DAA2C8A11E74AF5400A77992 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 536A9E0697325BA4890F9559 /* Pods-DDBrickDemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 5ELCMRHSMM;
@@ -475,6 +700,7 @@
 		};
 		DAA2C8A31E74AF5400A77992 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0E8264769B594929DC531FD /* Pods-DDBrickDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 5ELCMRHSMM;
 				INFOPLIST_FILE = DDBrickDemoUITests/Info.plist;
@@ -487,6 +713,7 @@
 		};
 		DAA2C8A41E74AF5400A77992 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC9C30D8B49B9241FC4D7B12 /* Pods-DDBrickDemoUITests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 5ELCMRHSMM;
 				INFOPLIST_FILE = DDBrickDemoUITests/Info.plist;
@@ -516,6 +743,7 @@
 				DAA2C89E1E74AF5400A77992 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DAA2C89F1E74AF5400A77992 /* Build configuration list for PBXNativeTarget "DDBrickDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +752,7 @@
 				DAA2C8A11E74AF5400A77992 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DAA2C8A21E74AF5400A77992 /* Build configuration list for PBXNativeTarget "DDBrickDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +761,7 @@
 				DAA2C8A41E74AF5400A77992 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
