@@ -17,6 +17,8 @@
 		DAA2C8981E74AF5400A77992 /* DDBrickDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA2C8971E74AF5400A77992 /* DDBrickDemoUITests.m */; };
 		DAA2C8A61E74B4D600A77992 /* DDBrick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA2C8A51E74B4D600A77992 /* DDBrick.framework */; };
 		DAA2C8A81E74B4DD00A77992 /* DDBrick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAA2C8A51E74B4D600A77992 /* DDBrick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAA2C8AB1E74B74C00A77992 /* DDUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA2C8AA1E74B74C00A77992 /* DDUIKit.framework */; };
+		DAA2C8AC1E74B74C00A77992 /* DDUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAA2C8AA1E74B74C00A77992 /* DDUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				DAA2C8A81E74B4DD00A77992 /* DDBrick.framework in Embed Frameworks */,
+				DAA2C8AC1E74B74C00A77992 /* DDUIKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,6 +71,7 @@
 		DAA2C8971E74AF5400A77992 /* DDBrickDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDBrickDemoUITests.m; sourceTree = "<group>"; };
 		DAA2C8991E74AF5400A77992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAA2C8A51E74B4D600A77992 /* DDBrick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DDBrick.framework; sourceTree = "<group>"; };
+		DAA2C8AA1E74B74C00A77992 /* DDUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DDUIKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAA2C8A61E74B4D600A77992 /* DDBrick.framework in Frameworks */,
+				DAA2C8AB1E74B74C00A77992 /* DDUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +104,7 @@
 		DAA2C8661E74AF5300A77992 = {
 			isa = PBXGroup;
 			children = (
+				DAA2C8AA1E74B74C00A77992 /* DDUIKit.framework */,
 				DAA2C8A51E74B4D600A77992 /* DDBrick.framework */,
 				DAA2C8711E74AF5300A77992 /* DDBrickDemo */,
 				DAA2C88B1E74AF5400A77992 /* DDBrickDemoTests */,
