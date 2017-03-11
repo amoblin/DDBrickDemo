@@ -15,6 +15,8 @@
 		DAA2C8821E74AF5300A77992 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA2C8801E74AF5300A77992 /* LaunchScreen.storyboard */; };
 		DAA2C88D1E74AF5400A77992 /* DDBrickDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA2C88C1E74AF5400A77992 /* DDBrickDemoTests.m */; };
 		DAA2C8981E74AF5400A77992 /* DDBrickDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA2C8971E74AF5400A77992 /* DDBrickDemoUITests.m */; };
+		DAA2C8A61E74B4D600A77992 /* DDBrick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA2C8A51E74B4D600A77992 /* DDBrick.framework */; };
+		DAA2C8A81E74B4DD00A77992 /* DDBrick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAA2C8A51E74B4D600A77992 /* DDBrick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DAA2C8A91E74B4DD00A77992 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DAA2C8A81E74B4DD00A77992 /* DDBrick.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		DAA2C86F1E74AF5300A77992 /* DDBrickDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDBrickDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA2C8731E74AF5300A77992 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -51,6 +67,7 @@
 		DAA2C8931E74AF5400A77992 /* DDBrickDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DDBrickDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA2C8971E74AF5400A77992 /* DDBrickDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDBrickDemoUITests.m; sourceTree = "<group>"; };
 		DAA2C8991E74AF5400A77992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAA2C8A51E74B4D600A77992 /* DDBrick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DDBrick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAA2C8A61E74B4D600A77992 /* DDBrick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +99,7 @@
 		DAA2C8661E74AF5300A77992 = {
 			isa = PBXGroup;
 			children = (
+				DAA2C8A51E74B4D600A77992 /* DDBrick.framework */,
 				DAA2C8711E74AF5300A77992 /* DDBrickDemo */,
 				DAA2C88B1E74AF5400A77992 /* DDBrickDemoTests */,
 				DAA2C8961E74AF5400A77992 /* DDBrickDemoUITests */,
@@ -150,6 +169,7 @@
 				DAA2C86B1E74AF5300A77992 /* Sources */,
 				DAA2C86C1E74AF5300A77992 /* Frameworks */,
 				DAA2C86D1E74AF5300A77992 /* Resources */,
+				DAA2C8A91E74B4DD00A77992 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -428,6 +448,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5ELCMRHSMM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = DDBrickDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.marboo.DDBrickDemo;
@@ -440,6 +464,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5ELCMRHSMM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = DDBrickDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.marboo.DDBrickDemo;
@@ -516,6 +544,7 @@
 				DAA2C89E1E74AF5400A77992 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DAA2C89F1E74AF5400A77992 /* Build configuration list for PBXNativeTarget "DDBrickDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +553,7 @@
 				DAA2C8A11E74AF5400A77992 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DAA2C8A21E74AF5400A77992 /* Build configuration list for PBXNativeTarget "DDBrickDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +562,7 @@
 				DAA2C8A41E74AF5400A77992 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
